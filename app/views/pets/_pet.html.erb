@@ -4,6 +4,11 @@
     <%= pet.name %>
   </p>
 
+  <div>
+    <!-- Para imagenes guardadas como BLOBS -->
+    <%=image_tag pet.images[0]%>
+  </div>
+
   <p>
     <strong>Race:</strong>
     <%= pet.race %>
@@ -18,5 +23,11 @@
     <strong>Gender:</strong>
     <%= pet.gender %>
   </p>
+
+  <div>
+    <h5>Dueño</h5>
+    <!-- Para imagenes guardadas como URL -->
+    <%=image_tag pet.user.images[0].url%>
+  </div>
 
 </div>
