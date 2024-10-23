@@ -6,4 +6,6 @@ class User < ApplicationRecord
   has_many :pets
   has_many :matches
   has_many :images, as: :imageable
+  # permite subir una imagen al momento de crear nuevo usuario
+  accepts_nested_attributes_for :images
 end
