@@ -82,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: macot_tinder_production
+  database: macot_tinder
   username: macot_tinder
   password: <%= ENV["MACOT_TINDER_DATABASE_PASSWORD"] %>
