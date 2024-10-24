@@ -3,6 +3,7 @@ class PetsController < ApplicationController
 
   # GET /pets or /pets.json
   def index
+    puts "\n\n#{ENV["aws_access_key"]}\n\n"
     @pets = Pet.all
   end
 

@@ -33,6 +33,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+config/application.yml
+mbensan_accessKeys.csv
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
